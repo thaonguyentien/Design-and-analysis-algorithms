@@ -1,8 +1,10 @@
 /*
+Name:Toilet Seat
 Author:NTT_TNN
 Vesrion:
 Copyright:nguyentienthao96@gmail.com
-Description:Toilet Seat
+Description: dung mot bien cho biet trang thai hien tai cua toilet va mot bien cho biet cac yeu cau lan luot
+cua moi nguoi va doi chieu vao cac truong hop de tinh
 Date and time : 18h 14/06/2016
 */
 

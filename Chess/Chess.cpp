@@ -262,8 +262,8 @@ int main() {
 	for (int i = 0; i < n; ++i) {
 		cnt = 0;
 		flag = 0;
-		for (int i = 0; i < 7; ++i)
-			for (int j = 0; j < 7; ++j) table[i][j] = 0;
+		for (int i = 0; i < 8; ++i)
+			for (int j = 0; j < 8; ++j) table[i][j] = 0;
 		getline(cin, str);
 		string str1, str2, str3, str4;
 		
@@ -288,7 +288,13 @@ int main() {
 		else if (str3 == "H") t3 = 7;
 		
 		t4 = atoi(str4.c_str())-1;
-		//cout << t1 << t2 << t3<<t4;
+		cout << t1 << t2 << t3<<t4;
+		cout << "mang -1:" << endl;
+		for (int i = 0; i < 8; ++i) {
+			for (int j = 0; j < 8; ++j)
+				cout << "  " << table[i][j] << "  ";
+			cout << endl;
+		}
 		if (t1 >= 0 && t2 >= 0 && t3 >= 0 && t4 >= 0) {
 			table[t1][t2] = 3;
 			table[t3][t4] = 4;
@@ -298,6 +304,12 @@ int main() {
 			return 0;
 		}
 		//cout << table[t1][t2] <<"   TABLE"<< table[t3][t4];
+		cout << "mang 0:" << endl;
+		for (int i = 0; i < 8; ++i) {
+			for (int j = 0; j < 8; ++j)
+				cout << "  " << table[i][j] << "  ";
+			cout << endl;
+		}
 		if(t1>7||t2>7||t3>7||t4>7) printf("Impossible\n");
 		else if (str1 == str3&&str2 == str4) {
 			printf("0 ");
@@ -306,14 +318,14 @@ int main() {
 		else if (((t1 + t2) % 2) != ((t3 + t4) % 2)) printf("Impossible\n");
 		else {
 			star(table, t1, t2, 3);
-			/*cout << "mang 1:" << endl;
+			cout << "mang 1:" << endl;
 			for (int i = 0; i < 8; ++i) {
 				for (int j = 0; j < 8; ++j)
 					cout << "  " << table[i][j] << "  ";
 				cout << endl;
 			}
 			cout << "i j ban dau";
-			printf("i=%d  ,j=%d\n", iii, jjj);*/
+			printf("i=%d  ,j=%d\n", iii, jjj);
 			if (flag == 1) {
 				printf("%d ",cnt);
 				cout << str;
@@ -321,12 +333,12 @@ int main() {
 			}
 			else {
 				star(table, t3, t4, 4);
-				/*cout << "mang 2:" << endl;
+				cout << "mang 2:" << endl;
 				for (int i = 0; i < 8; ++i) {
 					for (int j = 0; j < 8; ++j)
 						cout << "  " << table[i][j] << "  ";
 					cout << endl;
-				}*/
+				}
 				if (flag == 1) 
 					//printf("i=%d  ,j=%d\n", iii, jjj);
 				printf("%d %c %c %c %d %c %d", cnt, str[0], str[2], keys[iii], jjj+1, str[4], t4+1);

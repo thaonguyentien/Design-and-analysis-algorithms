@@ -1,11 +1,14 @@
 /*
+Name: Eight Queen
 Author:NTT_TNN
 Vesrion:
 Copyright:nguyentienthao96@gmail.com
-Description: Eight queens
+Description: y tuong co ban la voi moi quan hau ta tim ra cac vi tri ma quan hau do co the tan cong duoc va danh dau vi tri do.
+neu khi den mot vi tri ma quan hau co the tan cong ma co quan hau khac thi in ra la:"valid" nguoc lai khi du 8 quan hau thi in ra
+"valid"
 Date and time : 9h00 14/06/2016
 */
-// test case : luu y khi dien khong du 8 quan hau se in ra invalid
+
 #include<cstdio>
 #include<string>
 
