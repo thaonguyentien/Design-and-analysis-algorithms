@@ -52,14 +52,18 @@ int main() {
 	string temp;
 	int jj = 0, ii = 0;
 	str.*/
-	int  n[3];
+	/*int  n[3];
 	n[0] = 3;
 	n[1] = 2;
 	n[2] = 4;
 	sort_heap(n, n + 3);
 	for (int i = 0; i < 3; ++i) {
 		cout << " " << n[i];
-	}
-	
+	}*/
+	string a;
+	cin >> a;
+	int b = stoi(a);
+	if (a.size() == 0) cout << "np";
+	cout <<"b=" << b;
 	_getch();
 }
