@@ -60,10 +60,22 @@ int main() {
 	for (int i = 0; i < 3; ++i) {
 		cout << " " << n[i];
 	}*/
-	string a;
+	/*string a;
 	cin >> a;
 	int b = stoi(a);
 	if (a.size() == 0) cout << "np";
-	cout <<"b=" << b;
+	cout <<"b=" << b;*/
+	char a[2][2];
+	for ( int i = 0; i < 2; ++i) {
+		for (int j = 0; j < 3; ++j) {
+			scanf_s("%c", &a[i][j]);
+		}
+	}
+	for (int i = 0; i < 2; ++i) {
+		for (int j = 0; j < 2; ++j) {
+			printf("%d ", i+j);
+		}
+		printf("\n");
+	}
 	_getch();
 }

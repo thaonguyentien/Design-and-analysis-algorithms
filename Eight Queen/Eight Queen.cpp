@@ -109,7 +109,7 @@ int main() {
 			a[i][j] = '.';
 	for (int i = 0; i < 8; ++i) {
 		for (int j = 0; j < 9; ++j) {
-			scanf_s("%c", &temp);
+			scanf("%c", &temp);
 			if (temp == '*') {
 				cnt++;
 				if (a[i][j] == '*') {
@@ -126,9 +126,9 @@ int main() {
 			}
 			else continue;
 		}
-		
+
 	}
-	if (flag == 1&&cnt==8) printf("valid");
+	if (flag == 1 && cnt == 8) printf("valid");
 	else printf("invalid");
 	return 0;
 

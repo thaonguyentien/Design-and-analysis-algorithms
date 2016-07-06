@@ -66,7 +66,6 @@ int main() {
 	use_io_optimizations();
 	unsigned int n, k;
 	map<string, unsigned int > dic;
-	clock_t start = clock();
 	fstream fi,fo,ft;
 	ft.open("temp.txt", ios::out);
 	fi.open("input.txt", ios::in);
@@ -88,8 +87,7 @@ int main() {
 		}
 		fo << cnt << "\n";
 	}
-	clock_t finish = clock();
-	fo << "time=" << (finish - start) / CLOCKS_PER_SEC;
+	
 	fi.close();
 	fo.close();
 	
