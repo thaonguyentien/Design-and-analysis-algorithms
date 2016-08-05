@@ -24,7 +24,7 @@ void use_io_optimizations()
 	ios_base::sync_with_stdio(false);
 	cin.tie(nullptr);
 }
-
+	
 
 unsigned int ii[63], jj[63];
 void binary(unsigned int arr[], unsigned int i);
